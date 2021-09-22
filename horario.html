@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<head>
+	<title>Página Web Estática</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keyword" content="ISC, 502-A, ITSJC, Jesús Carranza, Horario">
+	<meta name="description" content="Pagina web para alumnos de quinto semestre de ingeniería en Sistemas Computacionales del campus Jesús Carranza, veracruz, periodo escolar sep2021 - ene2022">
+	<meta name="author" content="Arturo Salas Hernández">
+	<meta name="copyright" content="ITSJC">
+	<link rel="Images/icon" href="icono.ico">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/horario.css">
+	<link href="https://fonts.googleapis.com/css2?family=Gluten:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section class="sec">
+		
+		<header>
+			<a href="#" class="logo">Arturo</a>
+			<div class="toggleMenu" onclick="menuToggle();"></div>
+			<ul class="navigation">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="horario.html">Horario</a></li>
+				<li><a href="materia.html">Materia en curso</a></li>
+				<li><a href="hora.html">Hora Actual</a></li>
+			</ul>
+		</header>
+
+		<div class="content">
+			<h2>Horario escolar | ISC 502-A | Periodo Sep2021 - Ene2022</h2>
+			<div class="table">
+				<table>
+					<tr>
+						<td class="border"></td>
+						<td class="border">LUNES</td>
+						<td class="border">MARTES</td>
+						<td class="border">MIÉRCOLES</td>
+						<td class="border">JUEVES</td>
+						<td class="border">VIERNES</td>
+					</tr>
+					<tr>
+						<td class="border">HORARIO</td>
+						<td class="EXT">ACTIVIDADES EXTRAESCOLARES 12:00 - 13:00</td>
+						<td class="EXT">ACTIVIDADES EXTRAESCOLARES 12:00 - 13:00</td>
+						<td class="EXT">ACTIVIDADES EXTRAESCOLARES 12:00 - 13:00</td>
+						<td class="EXT">ACTIVIDADES EXTRAESCOLARES 12:00 - 13:00</td>
+						<td class="EMPTY"></td>
+					</tr>
+					<tr>
+						<td class="border">13:00 - 14:00</td>
+						<td class="ING">INGLÉS</td>
+						<td class="SIM">SIMULACIÓN</td>
+						<td class="ING">INGLÉS</td>
+						<td class="FIS">FUNDAMENTOS DE INGENIERÍA DE SOFTWARE</td>
+						<td class="SIM">SIMULACIÓN</td>
+					</tr>
+					<tr>
+						<td class="border">14:00 - 15:00</td>
+						<td class="ING">INGLÉS</td>
+						<td class="SIM">SIMULACIÓN</td>
+						<td class="ING">INGLÉS</td>
+						<td class="FIS">FUNDAMENTOS DE INGENIERÍA DE SOFTWARE</td>
+						<td class="FIS">FUNDAMENTOS DE INGENIERÍA DE SOFTWARE</td>
+					</tr>
+					<tr>
+						<td class="border">15:00 - 16:00</td>
+						<td class="DES">DESARROLLO SUSTENTABLE</td>
+						<td class="DES">DESARROLLO SUSTENTABLE</td>
+						<td class="SIM">SIMULACIÓN</td>
+						<td class="EMPTY"></td>
+						<td class="FIS">FUNDAMENTOS DE INGENIERÍA DE SOFTWARE</td>
+					</tr>
+					<tr>
+						<td class="border">16:00 - 17:00</td>
+						<td class="DES">DESARROLLO SUSTENTABLE</td>
+						<td class="DES">DESARROLLO SUSTENTABLE</td>
+						<td class="SIM">SIMULACIÓN</td>
+						<td class="TUT">TUTORÍAS</td>
+						<td class="ARQ">ARQUITECTURA DE COMPUTADORAS</td>
+					</tr>
+					<tr>
+						<td class="border">17:00 - 18:00</td>
+						<td class="ARQ">ARQUITECTURA DE COMPUTADORAS</td>
+						<td class="TALL">TALLER DE BASE DE DATOS</td>
+						<td class="TALL">TALLER DE BASE DE DATOS</td>
+						<td class="TUT">TUTORÍAS</td>
+						<td class="DES">DESARROLLO SUSTENTABLE</td>
+					</tr>
+					<tr>
+						<td class="border">18:00 - 19:00</td>
+						<td class="ARQ">ARQUITECTURA DE COMPUTADORAS</td>
+						<td class="TALL">TALLER DE BASE DE DATOS</td>
+						<td class="TALL">TALLER DE BASE DE DATOS</td>
+						<td class="EMPTY"></td>
+						<td class="EMPTY"></td>
+					</tr>
+					<tr>
+						<td class="border">19:00 - 20:00</td>
+						<td class="FT">FUNDAMENTOS DE TELECOMUNICACIONES</td>
+						<td class="ARQ">ARQUITECTURA DE COMPUTADORAS</td>
+						<td class="FT">FUNDAMENTOS DE TELECOMUNICACIONES</td>
+						<td class="EMPTY"></td>
+						<td class="EMPTY"></td>
+					</tr>
+					<tr>
+						<td class="border">20:00 - 21:00</td>
+						<td class="FT">FUNDAMENTOS DE TELECOMUNICACIONES</td>
+						<td class="ARQ">ARQUITECTURA DE COMPUTADORAS</td>
+						<td class="FT">FUNDAMENTOS DE TELECOMUNICACIONES</td>
+						<td class="EMPTY"></td>
+						<td class="EMPTY"></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+	</section>
+
+	<script type="text/javascript">
+		function menuToggle() {
+			const toggleMenu = document.querySelector('.toggleMenu');
+			const navigation = document.querySelector('.navigation');
+			toggleMenu.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+	</script>
+
+</body>
+</html>

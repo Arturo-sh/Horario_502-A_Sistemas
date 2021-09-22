@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- <html lang="en"> -->
+<head>
+	<title>Página Web Estática</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keyword" content="ISC, 502-A, ITSJC, Jesús Carranza, Horario">
+	<meta name="description" content="Pagina web para alumnos de quinto semestre de ingeniería en Sistemas Computacionales del campus Jesús Carranza, veracruz, periodo escolar sep2021 - ene2022">
+	<meta name="author" content="Arturo Salas Hernández">
+	<meta name="copyright" content="ITSJC">
+	<link rel="Images/icon" href="icono.ico">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Gluten:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section class="sec">
+		
+		<header>
+			<a href="#" class="logo">Arturo</a>
+			<div class="toggleMenu" onclick="menuToggle();"></div>
+			<ul class="navigation">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="horario.html">Horario</a></li>
+				<li><a href="materia.html">Materia en curso</a></li>
+				<li><a href="hora.html">Hora Actual</a></li>
+			</ul>
+		</header>
+
+		<div class="content">
+			<div class="textBX">
+				<h3>Aquí se muestran los docentes para cada materia</h3>
+			</div>
+		</div>
+
+	</section>
+
+	<script type="text/javascript">
+		function menuToggle() {
+			const toggleMenu = document.querySelector('.toggleMenu');
+			const navigation = document.querySelector('.navigation');
+			toggleMenu.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+	</script>
+
+</body>
+</html>
